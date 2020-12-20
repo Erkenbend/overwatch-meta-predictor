@@ -1,3 +1,6 @@
 *.class
 target/
 .idea/
+~$*.xlsx
+**/graph_export.xlsx
+**/venv/
