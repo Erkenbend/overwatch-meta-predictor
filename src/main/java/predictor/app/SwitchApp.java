@@ -3,11 +3,13 @@ package predictor.app;
 import predictor.graph.EnemyGraph;
 import predictor.graph.TeamGraph;
 import predictor.team.Hero;
+import predictor.team.Role;
 import predictor.team.Team;
 import predictor.team.TeamFactory;
 import predictor.util.ResourceReader;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -28,9 +30,26 @@ public class SwitchApp {
 
         // Create initial teams
         int teamSize = 6;
-        Team team1 = TeamFactory.createTeam(heroesList, teamSize, bannedHeroesNames);
+        // Team team1 = TeamFactory.createTeam(heroesList, teamSize, bannedHeroesNames);
+        List<Hero> roster1 = new ArrayList<>();
+        roster1.add(new Hero("Ana", Role.SUPPORT));
+        roster1.add(new Hero("Sigma", Role.TANK));
+        roster1.add(new Hero("Tracer", Role.DAMAGE));
+        roster1.add(new Hero("Moira", Role.SUPPORT));
+        roster1.add(new Hero("Widowmaker", Role.DAMAGE));
+        roster1.add(new Hero("Orisa", Role.TANK));
+        Team team1 = new Team(roster1);
         System.out.println(String.format("Initial Team 1: %s", team1));
-        Team team2 = TeamFactory.createTeam(heroesList, teamSize, bannedHeroesNames);
+
+        // Team team2 = TeamFactory.createTeam(heroesList, teamSize, bannedHeroesNames);
+        List<Hero> roster2 = new ArrayList<>();
+        roster2.add(new Hero("Soldier: 76", Role.DAMAGE));
+        roster2.add(new Hero("Hanzo", Role.DAMAGE));
+        roster2.add(new Hero("Moira", Role.SUPPORT));
+        roster2.add(new Hero("Roadhog", Role.TANK));
+        roster2.add(new Hero("Ana", Role.SUPPORT));
+        roster2.add(new Hero("Wrecking Ball", Role.TANK));
+        Team team2 = new Team(roster2);
         System.out.println(String.format("Initial Team 2: %s", team2));
 
         for (int i = 0; i < teamSize; i++) {  // I'm in position i in team 1, what should I switch to?

@@ -9,10 +9,7 @@ import predictor.team.TeamFactory;
 import predictor.team.TeamHelper;
 import predictor.util.ResourceReader;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * This "main" class is for development purpose only
@@ -30,7 +27,8 @@ public class BattleApp {
         // List<String> bannedHeroesNames = Arrays.asList("Reinhardt", "McCree", "Widowmaker", "Moira");
         // List<String> bannedHeroesNames = new ArrayList<>();
         // List<String> bannedHeroesNames = Arrays.asList("Wrecking Ball", "McCree", "Mei", "Brigitte");
-        List<String> bannedHeroesNames = Arrays.asList("D.Va", "Reaper", "Sombra", "Ana");
+        // List<String> bannedHeroesNames = Arrays.asList("D.Va", "Reaper", "Sombra", "Ana");
+        List<String> bannedHeroesNames = Arrays.asList("Widowmaker", "McCree");
 
         // Create initial teams
         int teamSize = 6;

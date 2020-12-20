@@ -22,7 +22,6 @@ public class TeamFactory {
                 createTeamWithoutRepetition(heroesList, teamSize, bannedHeroesNames);
     }
 
-
     public static Team createTeamWithRepetitionAllowed(List<Hero> heroesList, int teamSize) {
         return createTeamWithRepetitionAllowed(heroesList, teamSize, new ArrayList<>());
     }
