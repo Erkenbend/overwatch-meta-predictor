@@ -3,7 +3,7 @@ from openpyxl.styles import Font
 
 MODIFIABLE_CELLS_FONT = Font(bold=True)
 REF_CELLS_FONT = Font(color='969696')
-EXCEL_EXPORT_FILE_PATH = 'graph_export.xlsx'
+EXCEL_EXPORT_FILE_PATH = './graph_export.xlsx'
 HEROES_LIST_FILE_PATH = '../src/main/resources/heroes_list'
 ENEMY_GRAPH_FILE_PATH = '../src/main/resources/enemy_graph'
 TEAM_GRAPH_FILE_PATH = '../src/main/resources/team_graph'
